@@ -6,13 +6,11 @@ public class FollowPlayer : MonoBehaviour
 {
     private Transform vehicle;
 
-    private Vector3 offset = new Vector3(0, 5, -20);
+    private Vector3 offset = new Vector3(8, 5, -27);
 
     private void Start()
     {
-        vehicle = GameObject.FindWithTag("Vehicle").transform;
-
-        Debug.Log(vehicle);
+        vehicle = GameObject.FindWithTag("Human").transform;
     }
 
     private void Update()
